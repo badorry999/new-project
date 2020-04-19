@@ -1,0 +1,784 @@
+body{
+   
+    height: 5900px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+   
+
+}
+
+
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+
+.home{
+    height: 100vh;
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.overlay{
+
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.3)
+   
+
+}
+
+
+.clear{
+    clear: both;
+}
+
+ 
+
+.ltr-effect{
+    position: relative;
+}
+
+
+
+.ltr-effect:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: #333;
+    z-index: -1;
+    transition: width 0.5s;
+
+}
+
+.ltr-effect:hover:after {
+  
+    width: 100%;
+
+}
+
+
+.img-effect{
+    position: relative;
+}
+
+
+.img-effect:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 80%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5%;
+    background-color: rgba(51, 51, 51, 0.452);
+    z-index: 1;
+    transition: 0.5s;
+
+}
+
+
+.img-effect:hover:after{
+   width: 100%;
+}
+
+
+.ttb-effect{
+    position: relative;
+}
+
+
+
+.ttb-effect:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    z-index: -1;
+    transition: height 0.5s;
+
+}
+
+.ttb-effect:hover:after {
+  
+    height: 100%;
+
+}
+
+
+
+
+
+
+
+
+nav{
+    background-color: rgba(0, 0, 0, 0.603);
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    z-index:5;
+}
+
+
+nav ul {
+    top: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    border: 10px ;
+    
+
+}
+
+
+nav ul li{
+
+    display: inline;
+     
+
+
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+    float: right;
+    margin: 3px;
+    padding: 12px;
+
+}
+
+
+nav li a:hover{
+    color: rgba(255, 255, 255, 0.548);
+}
+
+.content{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 30%;
+    left: 55%;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+
+
+}
+
+.content h1{
+    border-bottom: 2px solid rgb(255, 0, 0);
+    border-radius: 20%;
+}
+.home-content-title{
+    top: 40%;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+
+.button1{
+    min-width: 150px;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.692);
+    color: white;
+}
+
+.button1:hover{
+    background-color: rgba(0, 0, 0, 0.472);
+    transition: opacity 0.3s;
+}
+
+.section-header{
+
+   text-align: center;
+   
+}
+
+
+ 
+ 
+.section-title{
+    
+    font-size: large;
+    margin: auto ;
+    text-transform: capitalize;
+    padding: 80px;
+    text-align: center;
+   
+
+}
+
+
+
+.line{
+    display:block;
+    height: 5px;
+    width: 50px;
+    margin: auto;
+    background-color: rgb(31, 137, 223);
+}
+
+
+.about-content{
+    overflow: hidden;
+}
+
+
+
+.about-item{
+
+    width: 30%;
+    height: auto;
+    float: left;
+    text-align: center;
+    border: 1px solid rgba(220, 221, 223, 0.678);
+    border-radius: 10px;
+    margin: 5px 20px 0 20px;
+    text-transform: capitalize;
+    padding: 20px 0 20px 0;
+}
+
+
+.about-item:hover .about-item-title{
+    color: white;
+}
+
+.about-item:hover .about-item-link{
+    color: white;
+}
+
+
+.about-item-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(78, 133, 170);
+    text-transform: uppercase;
+    line-height: 1.2;
+    transition: color 0.5s;
+
+
+}
+
+.about-item-des{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(147, 152, 160);
+}
+
+.about-item-link{
+    color: rgb(78, 133, 170);
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: color 0.5s;
+
+}
+
+
+
+.section-portfolio{
+
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 0;
+    margin: 6% 0 0 0;
+    background-color: rgba(230, 230, 231, 0.363);
+ }
+
+.portfolio-content{
+    overflow: hidden;
+    
+}
+
+
+.portfolio-items{
+    width: 30%;
+    float: left;
+    margin: 0 1px 0 30px;
+}
+
+.portfolio-items img{
+    width: 100%;
+    margin: 0px 20% 50px 0%;
+    border-radius: 5%;
+    
+}
+
+
+
+
+/*section-service*/
+
+.section-service{
+    text-align: center;
+}
+
+
+
+.service-itmes{
+    width: 30%;
+    float: left;
+    text-align: center;
+    border: 1px solid rgba(220, 221, 223, 0.678);
+    border-radius: 10px;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.service-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(78, 133, 170);
+    line-height: 1.1;
+    text-transform: uppercase;
+    transition: color 0.5s;
+
+}
+
+.service-itmes:hover .service-title{
+    color: white;
+}
+
+.service-des{
+    transition: color 0.5s;
+}
+.service-itmes:hover .service-des{
+    color: rgb(147, 152, 160);
+}
+
+ 
+.option-itmes{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+
+
+
+
+.option-itmes .section-title .line{
+    float: left;
+}
+
+
+.title-op{
+    margin-bottom: 5px;
+}
+
+.section-option .section-title{
+    padding: 15% 0 5% 0;
+    text-align: left;
+}
+
+.option-des{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.3;
+   
+    text-align: center;
+}
+
+.option-itmes li{
+    font-family: sans-serif;
+    text-transform: capitalize;
+    line-height: 1.4;
+    font-size: 17px;
+    color: rgb(31, 137, 223);
+
+
+}
+
+
+.option-itmes-img{
+    
+    padding-top: 20%;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-right: 29px;
+}
+
+.option-bollets {
+   list-style: none;
+   text-align: center;
+   padding-left: 60%;
+  
+
+}
+
+
+.option-bollets li{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: rgba(220, 221, 223, 0.678);
+    margin: 6px;
+    border-radius: 50%;
+}
+
+li.active-list{
+    background-color: royalblue;
+}
+
+.section-numper{
+   background-image: url(../images/background2.jpg);
+   background-position: center;
+   background-attachment: fixed;
+   position: relative;
+   background-size: cover;
+   height: 350px;
+   margin-top: 15%;
+   margin-left: 0;
+   
+}
+
+.section-numper .overlay{
+    background-color: rgba(0, 0, 0, .7)
+}
+
+
+.icon-numper{ 
+    
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding-top: 8%;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.icon-numper h3{
+    font-size: 25px;
+}
+
+.icon-numper span{
+    font-size: 17px;
+}
+
+.section-pricing{
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+
+
+
+.pricing-itmes{
+  
+    width: 30%;
+    float: left;
+    border: 3px solid  rgb(31, 137, 223);
+    text-align: center;
+
+}
+
+.span-tansition{
+   transition: color 0.5s;
+}
+
+.pricing-plan .dollar{
+    
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    margin: 20px 112px;
+    border: 2px solid  ;
+    border-top-color: #0087fc;
+    border-bottom-color: #00f0ac;
+    border-left-color: #00efac;
+    border-right-color: #0083ff;
+    border-radius: 50%;
+    text-transform: uppercase;
+}
+
+.pricing-plan .dollar h2{
+    
+   
+   font-size: 50px;
+   font-weight: bolder;
+   margin-bottom: 0;
+   margin-top: 4px;
+   transition: color 0.5s;
+}
+
+
+.pricing-itmes:hover .dollar {
+    color: white;
+}
+
+
+
+.pricing-plan h1{
+    width: 100%;
+    font-size: 30px;
+    margin: 30px auto;
+    color: darkgray;
+    text-transform: uppercase;
+
+     
+ }
+
+
+.section-test .overlay{
+    background-color: rgba(111, 21, 11, 0.3)
+    }
+
+
+ 
+
+
+.pricing-list li{
+    text-align: center;
+    margin-right: 30px;
+    list-style: none;
+    font-family: sans-serif;
+    line-height: 2;
+    font-size: 18px;
+    transition: color 0.5s;
+    
+    
+
+}
+
+.pricing-itmes:hover li{
+    color: white;
+}
+
+.pricing-button{
+    
+    
+   
+    background: none;
+    border: 0;
+    width: 120px;
+    display: block;
+    margin: 20px auto ;
+    padding: 10px 20px;
+    background-color: rgb(31, 137, 223);
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    border-radius: 4px;
+
+}
+
+.pricing-button:hover{
+    background-color: rgba(31, 137, 223, 0.376);
+    
+}
+
+
+
+.mar-b{
+    margin: 0 4%;
+}
+
+
+.mar-bt{
+    margin: 5%;
+}
+ 
+.section-test{
+    background-image: url(../images/background3.jpg);
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+    margin-top: 5%;
+  
+   
+}
+
+.test-itmes{
+    width: 50%;
+    float: left;
+    position: relative;
+    padding: 7% 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.img-test{
+    width: 14%;
+    border-radius: 50%;
+}
+
+
+.test-itmes h2{
+    text-transform: uppercase;
+}
+
+
+
+.section-school{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: block;
+   
+}
+
+
+
+
+.school-itmes{
+    width: 30%;
+    float: left;
+    position: relative;
+    margin-top: 10%;
+    background-color: rgba(220, 221, 223, 0.678);
+
+}
+
+
+
+.school-span{
+    position: absolute;
+    width: 30%;
+    height: 30px;
+    background-color: rgb(97, 189, 128);
+    color: white;
+    border: 0px solid ;
+    top: -23px;
+    left: 9px;
+    border-radius: 15px;
+    line-height: -5px;
+    text-align: center;
+    padding: 0px 12px;
+    border-width: 2px 2px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 0 2px;
+
+
+}
+
+
+
+.school-des{
+    padding: 20px;
+   
+}
+
+
+.school-contant{
+    padding: 10%;
+    margin: 0;
+}
+
+
+.school-contant h2{
+    
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(31, 137, 223);
+    text-transform: capitalize;
+
+}
+
+
+.school-contant p{
+    
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+    text-transform: capitalize;
+
+}
+
+.school-button button{
+
+   background: none;
+   border: none;
+   background-color: rgb(31, 137, 223);
+   color: white;
+   border-radius: 5%;
+   padding:  3% 6%;
+   
+}
+
+.school-button button:hover{
+    background-color: rgb(100, 142, 177) ;
+    color: white;
+}
+
+
+.footer{
+    background-color: black;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.footer-icon1{
+
+    list-style: none;
+    padding: 2% 0;
+    
+
+}
+
+
+.footer-icon1 li{
+    display: inline-block ;
+}
+
+.footer-icon1 li a{
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: cornflowerblue;
+    color:white;
+    margin: 0 10px;
+    line-height: 50px;
+    border-radius: 50%;
+
+
+}
+
+
+.footer p{
+    color: white;
+    padding-bottom: 1% ;
+    text-transform: uppercase;
+    font-size: 12px;
+    word-spacing: 2px;
+}
+
